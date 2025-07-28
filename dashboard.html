@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h2 class="header"><i class="fa fa-clipboard-check"></i> View Your Appraisal</h2>
+
+    <div class="employee-info">
+      <label><i class="fas fa-user"></i> Employee Name:</label>
+      <input type="text" id="viewName" placeholder="Enter employee name" />
+
+      <label><i class="fas fa-id-card"></i> Employee ID:</label>
+      <input type="text" id="viewId" placeholder="Enter employee ID" />
+
+      <div class="center-btn">
+        <button class="view-btn" onclick="viewAppraisal()"><i class="fas fa-eye"></i> View Appraisal</button>
+      </div>
+    </div>
+
+    <div id="result" style="margin-top: 30px;"></div>
+  </div>
+  
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
